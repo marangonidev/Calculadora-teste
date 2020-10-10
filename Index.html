@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Calculadora de soma</title>
+    <title>Calculadora de Multiplicação</title>
 </head>
 
 <body>
-    <h2>calculadora soma</h2>
+    <h2>calculadora multiplicação</h2>
     <div class="soma">
         <input id="n1" type="number">
         <input id="n2" type="number">
-        <button>Somar</button>
+        <button>Multiplicar</button>
         <span>Resultado</span>
     
     </div>
@@ -24,7 +24,7 @@
     btn.addEventListener('click',function() {
         const n1 = Number(document.querySelector('#n1').value)
         const n2 = Number(document.querySelector('#n2').value)
-        const resultado = n1 + n2
+        const resultado = n1 * n2
         spn.innerHTML = resultado
     })
 </script>
